@@ -46,14 +46,15 @@ function isActive($formName, $activeForm)
     </div>
 
     <div class="form-box" id="registration-form">
-        <?php if (!empty($reegistration_errors)): ?>
-            <div style="color: red; margin-bottom: 15px;">
+        <?php if (!empty($_SESSION['registration_errors'])): ?>
+            <div class="error-message" style="color: red; margin-bottom: 15px;">
                 <ul>
-                    <?php foreach ($registration_errors as $error): ?>
+                    <?php foreach ($_SESSION['registration_errors'] as $error): ?>
                         <li><?php echo htmlspecialchars($error); ?></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
+            <?php unset($_SESSION['registration_errors']); ?>
         <?php endif; ?>
         <form action="process_register.php" method="post">
             <h2>Register</h2>
