@@ -1,0 +1,6 @@
+Registration handler triggered at 2026-01-29 18:14:22
+Input values: {"LastName":"Reyes","FirstName":"Agnes","MiddleName":"Danila","birthdate":"1998-08-13","gender":"","phone":"","email":"","password":"Agnes@12345","confirmPwd":""}
+Validation errors: ["All fields are required."]
+Registration handler triggered at 2026-01-29 18:21:05
+Input values: {"LastName":"Reyes","FirstName":"Agnes","MiddleName":"Danilla","birthdate":"1990-12-04","gender":"","phone":"","email":"","password":"Agnes@123","confirmPwd":""}
+Validation errors: ["All fields are required."]
