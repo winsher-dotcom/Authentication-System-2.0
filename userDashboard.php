@@ -21,7 +21,7 @@ $user = $result->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/userDashboard.css">
 </head>
 <body>
 
@@ -32,12 +32,12 @@ $user = $result->fetch_assoc();
         <span style="font-size:2em;"><?php echo strtoupper(substr($user['first_name'],0,1)); ?></span>
     </div>
     <h3><?php echo strtoupper($user['first_name']); ?></h3>
-    <p>Email Address<br><?php echo htmlspecialchars($user['email']); ?></p>
-    <p>Full Name<br><?php echo htmlspecialchars($user['last_name'] . ', ' . $user['first_name'] . ' ' . $user['middle_name']); ?></p>
-    <p>Birthdate<br><?php echo htmlspecialchars($user['birthdate']); ?></p>
-    <p>Age<br><?php echo htmlspecialchars($user['age']); ?></p>
-    <p>Gender<br><?php echo htmlspecialchars(ucfirst($user['gender'])); ?></p>
-    <p>Phone<br>+63<?php echo htmlspecialchars($user['phone_number']); ?></p>
+    <p style="font-weight: bold;">Email Address<br><?php echo htmlspecialchars($user['email']); ?></p>
+    <p style="font-weight: bold;">Full Name<br><?php echo htmlspecialchars($user['last_name'] . ', ' . $user['first_name'] . ' ' . $user['middle_name']); ?></p>
+    <p style="font-weight: bold;">Birthdate<br><?php echo htmlspecialchars($user['birthdate']); ?></p>
+    <p style="font-weight: bold;">Age<br><?php echo htmlspecialchars($user['age']); ?></p>
+    <p style="font-weight: bold;">Gender<br><?php echo htmlspecialchars(ucfirst($user['gender'])); ?></p>
+    <p style="font-weight: bold;">Phone<br>+63<?php echo htmlspecialchars($user['phone_number']); ?></p>
 </div>
 </body>
 </html>
